@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body{
+    background-color: #20dbd8;
+    font-family: 'Patua One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 0px;
+}
+
+h1{
+    font-size: 54px;
+    background-color: #12272d;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    height: 100px;
+    padding-top: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.personal_data{
+    display: flex;
+    flex-direction: row;
+    height: 480px;
+    background-color: #124348;
+    border-radius: 20px;
+    font-size: 32px;
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+
+}
+
+.personal_data img{
+    width: 400px;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+.personal_data p{
+    margin: 60px;
+}
+
+.summary{
+    display: flex;
+    flex-direction: row;
+    height: 320px;
+    background-color: #126e6e;
+    border-radius: 20px;
+    font-size: 26px;
+    margin: 20px;
+}
+
+.summary #summary_data{    
+    background-color: #17a1a1;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.summary #summary_data p{
+    font-size: 32px;
+    text-align: center;
+}
+
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    background-color: #124348;
+    text-align: center;
+    font-size: 26px;
+}
+
+.experience #subtitle{
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+.experience_container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%; 
+}
+
+.experience #academic_data{   
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 80% 10%; 
+    background-color: #126e6e;
+    margin: 20px;
+    border-radius: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.experience #academic_data img{
+    width: 60%;
+}
+
+.experience #working_data{   
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 10%; 
+    background-color: #126e6e;
+    margin: 20px;
+    border-radius: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.experience #working_data img{
+    width: 40%;
+}
+
+
+.color1 {color: #12272d;}
+.color2 {color: #124348;}
+.color3 {color: #126e6e;}
+.color4 {color: #17a1a1;}
+.color5 {color: #20dbd8;}

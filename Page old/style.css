@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+header{
+    font-family: 'UnifrakturMaguntia', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1{
+    margin: 0;
+}
+
+header div{
+    font-size: 4px;
+    width: 20%;
+    margin: 5px 10px;
+}
+
+.titulo{
+    font-size: 18px;
+    width: 100%;
+}
+
+p{
+    font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    height: 100vh;
+    width: 70vh;
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-papel-grunge_1048-10791.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 3px solid gray;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.content div{
+    margin: 0px 10px;
+    width: 100%;
+}
+
+.text-img{
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 2px;
+}
