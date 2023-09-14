@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap');
+
+html{
+    font-size: 20px;
+}
+
+/* font-family: 'BIZ UDPGothic', sans-serif; */
+
+nav{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0px auto;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+.scroll_nav{
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 7px 6px black;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    border-radius: 1rem;
+    margin: 0.8rem 1rem 1rem 1rem;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    color: white;
+    text-shadow: 0px 7px 6px black;
+    background-color: rgba(183, 0, 0, 0.8);
+}
+
+.presentation{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.pixabay.com/photo/2016/11/22/19/31/asian-1850219_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation h1{
+    font-family: 'Sriracha', cursive;
+    color: white;
+    font-size: 6rem;
+}
+
+.text-j{
+    font-family: 'BIZ UDPGothic', sans-serif;
+}
+
+.text-j, main h2{
+    font-size: 1,2rem;
+}
+
+main{
+    background-color: beige;
+    width: 70vw;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

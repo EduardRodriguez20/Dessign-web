@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/10e0b11c-8d28-4368-bd5a-a6a8bae2c11e/dda6jes-8036d74e-2fa8-4c67-aa87-d27f013b4b8e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzEwZTBiMTFjLThkMjgtNDM2OC1iZDVhLWE2YThiYWUyYzExZVwvZGRhNmplcy04MDM2ZDc0ZS0yZmE4LTRjNjctYWE4Ny1kMjdmMDEzYjRiOGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4_MJyMfAFAVRnhHcdAVB547ra10HTtjgWkbyDXS11sA">
+    <title>Spirit Japanese</title>
+</head>
+<body>
+    <nav class="nav_bar">
+        <a href="">Inicio</a>
+        <a href="">Cultura</a>
+        <a href="">Ciudades</a>
+        <a href="">Tecnología</a>
+        <a href="">Entretenimiento</a>
+    </nav>
+
+    <div class="presentation">
+        <h1>JAPÓN</h1>
+    </div>
+
+    <main>
+        <h2>Bienvenido!</h2>
+        <h2 class="text-j">(ようこそ) Youkoso</h2>
+        <p>Bienvenido a Spirit Japanese, tu ventana al fascinante mundo de Japón. Explora la belleza, la historia 
+            y la innovación de este país asombroso a través de nuestro sitio web. 
+            Ya sea que estés planeando un viaje, interesado en su cultura o simplemente 
+            buscando información inspiradora, estamos aquí para guiarte en tu viaje.
+        </p>
+        <div>
+            <h2>Misión y Visión</h2>
+            <p>Nos esforzamos por crear un espacio en línea donde 
+                los amantes de Japón, los viajeros curiosos y los entusiastas de la cultura puedan 
+                encontrar inspiración, conocimiento y recursos valiosos para explorar Japón de 
+                manera más profunda y auténtica.
+            </p>
+
+            <p>Vision En [Nombre de tu sitio web], nuestra visión es convertirnos en la principal 
+                fuente en línea para aquellos que desean descubrir, comprender y enamorarse de 
+                Japón. Aspiramos a ser un recurso confiable y enriquecedor que inspire a personas 
+                de todo el mundo a explorar y apreciar la riqueza cultural, histórica y tecnológica de Japón.
+            </p>
+
+            <p>Misión Nuestra misión es proporcionar información de alta calidad y experiencias 
+                informativas sobre Japón. Nos comprometemos a ofrecer contenido preciso, actualizado 
+                y enriquecedor que resalte la belleza de Japón, sus ciudades, su historia, su cultura 
+                y su avanzada tecnología. Queremos facilitar viajes significativos, fomentar la 
+                comprensión intercultural y promover el amor por este maravilloso país.
+            </p>
+
+        </div>
+
+        <p>¡Gracias por visitarnos y disfruta explorando Japón con nosotros</p>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script>
+        const nav_cons = document.querySelector(".nav_bar");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY >= 56) {
+                nav_cons.classList.add("scroll_nav");
+            } else if (window.scrollY < 56) {
+                nav_cons.classList.remove("scroll_nav");
+            }
+        });
+    </script>
+</body>
+</html>
