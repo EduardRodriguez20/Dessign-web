@@ -10,60 +10,183 @@
     <title>Spirit Japanese</title>
 </head>
 <body>
-    <nav class="nav_bar">
-        <a href="">Inicio</a>
-        <a href="">Cultura</a>
-        <a href="">Ciudades</a>
-        <a href="">Tecnología</a>
-        <a href="">Entretenimiento</a>
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <p class="navbar-toggler icon" href="#">気 Spirit Japanese</p>
+            <button class="navbar-toggler nav-icon" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/culture.html">Cultura</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/cities.html">Ciudades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/tecnology.html">Tecnología</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/entertainment.html">Entretenimiento</a>
+                </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="presentation">
-        <h1>JAPÓN</h1>
+        <h1 data-aos="zoom-in">JAPÓN</h1>
+        <div data-aos="zoom-in">
+            <a href="#welcome"><span>迎</span> Bienvenida</a>
+            <a href="#gallery"><span>写真</span> Galeria</a>
+        </div>
     </div>
 
-    <main>
-        <h2>Bienvenido!</h2>
-        <h2 class="text-j">(ようこそ) Youkoso</h2>
-        <p>Bienvenido a Spirit Japanese, tu ventana al fascinante mundo de Japón. Explora la belleza, la historia 
-            y la innovación de este país asombroso a través de nuestro sitio web. 
-            Ya sea que estés planeando un viaje, interesado en su cultura o simplemente 
-            buscando información inspiradora, estamos aquí para guiarte en tu viaje.
-        </p>
-        <div>
-            <h2>Misión y Visión</h2>
-            <p>Nos esforzamos por crear un espacio en línea donde 
-                los amantes de Japón, los viajeros curiosos y los entusiastas de la cultura puedan 
-                encontrar inspiración, conocimiento y recursos valiosos para explorar Japón de 
-                manera más profunda y auténtica.
+    <main id="welcome">
+        <div class="w_text" data-aos="fade-down">
+            <h2>Bienvenido!</h2>
+            <h3 class="text-j">(ようこそ) Youkoso</h3>
+            <p>Bienvenido a Spirit Japanese, tu ventana al fascinante mundo de Japón. Explora la belleza, la historia 
+                y la innovación de este país asombroso a través de nuestro sitio web. 
+                Ya sea que estés planeando un viaje, interesado en su cultura o simplemente 
+                buscando información inspiradora, estamos aquí para guiarte en tu viaje.
             </p>
-
-            <p>Vision En [Nombre de tu sitio web], nuestra visión es convertirnos en la principal 
-                fuente en línea para aquellos que desean descubrir, comprender y enamorarse de 
-                Japón. Aspiramos a ser un recurso confiable y enriquecedor que inspire a personas 
-                de todo el mundo a explorar y apreciar la riqueza cultural, histórica y tecnológica de Japón.
-            </p>
-
-            <p>Misión Nuestra misión es proporcionar información de alta calidad y experiencias 
-                informativas sobre Japón. Nos comprometemos a ofrecer contenido preciso, actualizado 
-                y enriquecedor que resalte la belleza de Japón, sus ciudades, su historia, su cultura 
-                y su avanzada tecnología. Queremos facilitar viajes significativos, fomentar la 
-                comprensión intercultural y promover el amor por este maravilloso país.
-            </p>
-
         </div>
-
-        <p>¡Gracias por visitarnos y disfruta explorando Japón con nosotros</p>
+        <div class="contain_card">
+            <div class="card" data-aos="fade-right">
+                <img src="https://cdn.pixabay.com/photo/2016/11/07/14/03/japan-1805865_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><b>Nuestra visión</b> es crear un espacio en línea donde 
+                    los amantes de Japón, los viajeros curiosos y los entusiastas de la cultura puedan 
+                    encontrar inspiración, conocimiento y recursos valiosos para explorar y conocer
+                    Japón de manera más profunda y auténtica.</p>
+                </div>
+              </div>
+            <div class="card" data-aos="fade-left">
+                <img src="https://cdn.pixabay.com/photo/2020/09/14/22/27/river-5572289_1280.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><b>Nuestra misión</b> es proporcionar información y experiencias 
+                    informativas sobre Japón. Nos comprometemos a ofrecer contenido preciso y 
+                    enriquecedor que resalte la belleza de Japón, sus ciudades, su historia, 
+                    su cultura y su avanzada tecnología.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <div class="gallery" id="gallery" data-aos="fade-up">
+        <p>¡Gracias por visitarnos y disfruta explorando Japón con nosotros!</p>
+        <div id="carouselExampleRide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="https://cdn.pixabay.com/photo/2014/11/14/08/22/japan-530347_1280.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Santuarios Torii (廟)</h5>
+                        <p>Símbolos de espiritualidad y tradición, las emblemáticas 
+                            puertas rojas marcan la entrada a los lugares sagrados de Japón.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://cdn.pixabay.com/photo/2015/02/15/03/04/japanese-umbrellas-636870_1280.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Paraguas Japoneses (傘)</h5>
+                        <p>Obras de arte funcionales con diseños delicados y colores 
+                            vibrantes, no solo protegen de la lluvia, sino que también 
+                            reflejan la estética japonesa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://images.adsttc.com/media/images/5e15/06ea/3312/fdf5/c900/0282/large_jpg/00_TWC_Toyota-Woven-City_Road_Image-by-Squint-Opera.jpg?1578436292" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Woven City (ウーブン・シティ)</h5>
+                        <p>Esta ciudad se teje con tecnología de vanguardia 
+                            y sostenibilidad. Aquí, la inteligencia artificial y la movilidad 
+                            eléctrica se entrelazan para crear un entorno urbano pionero</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="footer-end">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-up-fill" viewBox="0 0 16 16">
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 1 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.707l1.5-1.5a.5.5 0 0 1 .708 0Z"/>
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                    <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                </svg>
+                <a href="#" class="nav-link px-2 text-body-secondary">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
+                    <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268zM9 4a1.468 1.468 0 0 1-.045.205c-.039.132-.1.295-.183.484a12.88 12.88 0 0 1-.637 1.223L8 6.142a21.73 21.73 0 0 1-.135-.23 12.88 12.88 0 0 1-.637-1.223 4.216 4.216 0 0 1-.183-.484A1.473 1.473 0 0 1 7 4a1 1 0 1 1 2 0zM3.67 5.5a1 1 0 0 1 1.366-.366 1.472 1.472 0 0 1 .156.142c.094.1.204.233.326.4.245.333.502.747.742 1.163l.13.232a21.86 21.86 0 0 1-.265.002 12.88 12.88 0 0 1-1.379-.06 4.214 4.214 0 0 1-.51-.083 1.47 1.47 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5zm1.366 5.366a1 1 0 0 1-1-1.732c.001 0 .016-.008.047-.02.037-.013.087-.028.153-.044.134-.032.305-.06.51-.083a12.88 12.88 0 0 1 1.379-.06c.09 0 .178 0 .266.002a21.82 21.82 0 0 1-.131.232c-.24.416-.497.83-.742 1.163a4.1 4.1 0 0 1-.327.4 1.483 1.483 0 0 1-.155.142zM9 12a1 1 0 0 1-2 0 1.476 1.476 0 0 1 .045-.206c.039-.131.1-.294.183-.483.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223.083.19.144.352.183.484A1.338 1.338 0 0 1 9 12zm3.33-6.5a1 1 0 0 1-.366 1.366 1.478 1.478 0 0 1-.2.064c-.134.032-.305.06-.51.083-.412.045-.898.061-1.379.06-.09 0-.178 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4.1 4.1 0 0 1 .327-.4c.046-.05.085-.086.114-.11.026-.022.04-.03.041-.032a1 1 0 0 1 1.366.366zm-1.366 5.366a1.494 1.494 0 0 1-.155-.141 4.225 4.225 0 0 1-.327-.4A12.88 12.88 0 0 1 9.74 9.16a22 22 0 0 1-.13-.232l.265-.002c.48-.001.967.015 1.379.06.205.023.376.051.51.083.066.016.116.031.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                </svg>
+                <a href="pages/culture.html" class="nav-link px-2 text-body-secondary">Cultura</a>
+            </li>
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass-fill" viewBox="0 0 16 16">
+                    <path d="M15.5 8.516a7.5 7.5 0 1 1-9.462-7.24A1 1 0 0 1 7 0h2a1 1 0 0 1 .962 1.276 7.503 7.503 0 0 1 5.538 7.24zm-3.61-3.905L6.94 7.439 4.11 12.39l4.95-2.828 2.828-4.95z"/>
+                </svg>
+                <a href="pages/cities.html" class="nav-link px-2 text-body-secondary">Ciudades</a>
+            </li>
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pci-card" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .5.5V4h13.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5H2v2.5a.5.5 0 0 1-1 0V2H.5a.5.5 0 0 1-.5-.5Z"/>
+                    <path d="M3 12.5h3.5v1a.5.5 0 0 1-.5.5H3.5a.5.5 0 0 1-.5-.5v-1Zm4 0h4v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1Z"/>
+                </svg>
+                <a href="pages/tecnology.html" class="nav-link px-2 text-body-secondary">Tecnología</a>
+            </li>
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-4k-fill" viewBox="0 0 16 16">
+                    <path d="M3.577 8.9v.03h1.828V5.898h-.062a46.781 46.781 0 0 0-1.766 3.001z"/>
+                    <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm2.372 3.715.435-.714h1.71v3.93h.733v.957h-.733V11H5.405V9.888H2.5v-.971c.574-1.077 1.225-2.142 1.872-3.202zm7.73-.714h1.306l-2.14 2.584L13.5 11h-1.428l-1.679-2.624-.615.7V11H8.59V5.001h1.187v2.686h.057L12.102 5z"/>
+                </svg>
+                <a href="pages/entertainment.html" class="nav-link px-2 text-body-secondary">Entretenimiento</a>
+            </li>
+            <li class="nav-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                </svg>
+                <a href="pages/contact.html" class="nav-link px-2 text-body-secondary">Contactanos</a>
+            </li>
+            </ul>
+            <div>
+                <img src="assets/Logo.PNG" alt="">
+            </div>
+            <p class="text-center text-body-secondary">&copy; 2023 Edan_RH, Inc</p>
+        </footer>
+    </div>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script> AOS.init(); </script>
     <script>
-        const nav_cons = document.querySelector(".nav_bar");
+        const nav_cons = document.querySelector(".navbar");
         window.addEventListener("scroll", () => {
-            if (window.scrollY >= 56) {
+            if (window.scrollY >= 600) {
                 nav_cons.classList.add("scroll_nav");
-            } else if (window.scrollY < 56) {
+            } else if (window.scrollY < 100) {
                 nav_cons.classList.remove("scroll_nav");
             }
         });

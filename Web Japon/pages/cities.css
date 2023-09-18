@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap');
+
+.color1 {color: #00271b;}
+.color2 {color: #005872;}
+.color3 {color: #00d1aa;}
+.color4 {color: #b3f558;}
+.color5 {color: #ffffa6;}
+
+
+html{
+    font-size: 20px;
+}
+
+.navbar{
+    font-family: 'Josefin Sans', sans-serif;
+    position: fixed !important;
+    transition: all 0.5s;
+    z-index: 2;
+    align-items: center;
+    width: 100vw;
+}
+
+.scroll_nav{
+    background-color: #00271b;
+    box-shadow: 0px 7px 6px #00271b;
+}
+
+.container-fluid{
+    width: 100vw;
+    justify-content: space-around !important;
+    align-items: center;
+}
+
+.navbar-collapse{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.navbar-nav{
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar .icon{
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    margin: 1rem;
+}
+
+.navbar-collapse a{
+    background-color: #00271b;
+    text-decoration: none;
+    color: white !important;
+    border-radius: 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+.navbar-collapse a:hover{
+    color: white;
+    text-shadow: 0px 7px 6px black;
+    background-color: #00d1aa;
+}
+
+.nav-icon{
+    background-color: white !important;
+}
+
+
+
+.presentation{
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(); */
+    background-size: cover;
+    background-position: top center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: end;
+    justify-items: center;
+    animation: change_back 16s ease infinite;
+}
+
+@keyframes change_back {
+    0% {
+        background-image: url(https://cdn.pixabay.com/photo/2020/01/14/03/53/tokyo-4763976_1280.jpg);
+    }
+    33% {
+        background-image: url(https://cdn.pixabay.com/photo/2020/01/31/07/23/tokyo-4807294_1280.jpg);
+    }
+    66% {
+        background-image: url(https://cdn.pixabay.com/photo/2021/12/16/11/08/mount-fuji-6874364_1280.jpg);
+    }
+    100% {
+        background-image: url(https://cdn.pixabay.com/photo/2020/01/14/03/53/tokyo-4763976_1280.jpg);
+    }   
+}
+
+.presentation h1{
+    font-family: 'Sriracha', cursive;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    text-shadow: 0px 8px 5px #00271b;
+}
+
+.presentation div{
+    height: 40%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.presentation div a{
+    background-color: #00271b;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 5px solid #00271b;
+    text-shadow: 0px 4px 6px rgb(255, 255, 255);
+    font-size: 1.6rem;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+
+.presentation div a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #00d1aa;
+    border: 5px solid #00d1aa;
+}
+
+.presentation div a span{
+    color: rgb(255, 255, 255);
+}
+
+.father{
+    width: 90vw;
+    margin: 0px auto;
+    display: flex;
+}
+
+
+.cont_aside {
+    z-index: 1;
+    width: 15%;
+    flex-direction: column;
+}
+
+.cont_aside a{
+    width: 100%;
+    border-radius: 20px;
+    background-color: #00271b;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 5px solid #00271b;
+    text-shadow: 0px 4px 6px rgb(255, 255, 255);
+    font-size: 1.1rem;
+    margin: 1rem;
+    padding: 0.3rem;
+    transition: all 500ms;
+}
+
+.cont_aside a:hover{
+    background-color: #00d1aa;
+    color: white;
+    border: 5px solid #00d1aa;
+    transform: scale(1.1);
+}
+
+
+main{
+    width: 85%;
+    padding-top: 6rem;
+    margin: 0px auto;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+main .cont_1{
+    width: 75%;
+    margin: 1rem auto;
+}
+
+.card{
+    border: 4px solid #005872 !important;
+}
+
+.text-j{
+    font-family: 'BIZ UDPGothic', sans-serif;
+    font-size: 1rem;
+}
+
+main h2{
+    font-size: 2rem;
+}
+
+.card-body h5{
+    font-size: 1.2rem;
+}
+
+.card-body p{
+    font-size: 0.8rem;
+}
+
+
+.cont_2{
+    padding-top: 4rem;
+    width: 75%;
+}
+
+
+.cont_3{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    width: 75%;
+}
+
+
+
+.footer-end{
+    background-color: black;
+}
+
+.footer-end .my-4 {
+    margin-bottom: 0 !important;
+}
+
+.py-3 a, .py-3 p{
+    color: white !important;
+}
+
+.py-3 li{
+    display: flex;
+    align-items: center;
+    margin: 0px 2rem;
+}
+
+.py-3 svg{
+    color: white;
+}
+
+.py-3 div{
+    width: 8rem;
+    margin: 0px auto;
+}
+
+.py-3 div img{
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1rem 0px 1rem 0px;
+}
+
+
+@media (max-width: 1350px){
+    main{
+        width: 90vw;
+    }
+
+    .presentation div a{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+    /* Estilos que se aplicarán cuando el teléfono esté en posición horizontal */
+    html{
+        font-size: 14px;
+    }
+
+    main{
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width: 765px){
+    html{
+        font-size: 16px;
+    }
+
+    .presentation h1{
+        font-size: 4rem;
+    }
+
+    .navbar{
+        background-color: #00271b;
+    }
+
+    .scroll_nav{
+        box-shadow: 0px 7px 6px rgba(0, 39, 27, 0.6);
+    }
+
+    .presentation div{
+        width: 90vw;
+        margin-bottom: 5rem;
+    }
+
+    .presentation div a{
+        font-size: 1rem;
+    }
+
+    .cont_aside{
+        width: 50vw;
+        left: -12.5rem;
+        transition: left 1s;
+    }
+
+    .cont_aside a{
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .cont_aside:hover{
+        left: 0;
+    }
+
+    .father{
+        width: 90vw;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main .cont_1, main .row{
+        width: 90%;
+    }
+
+    .carousel{
+        height: 50%;
+    }
+
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 14px;
+    }
+
+    main{
+        padding-top: 2rem;
+    }
+
+    .cont_1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont_1, .cont_2{
+        width: 90%;
+    }
+
+    .row{
+        width: 100% !important;
+    }
+
+    .navbar{
+        background-color: rgba(0, 39, 27, 0.6);
+    }
+
+}

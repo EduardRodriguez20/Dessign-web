@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap');
+
+html{
+    font-size: 20px;
+}
+
+.navbar{
+    font-family: 'Josefin Sans', sans-serif;
+    position: fixed !important;
+    transition: all 0.5s;
+    z-index: 2;
+    align-items: center;
+    width: 100vw;
+}
+
+.scroll_nav{
+    background-color: rgba(0, 0, 0);
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.5);
+}
+
+.container-fluid{
+    width: 100vw;
+    justify-content: space-around !important;
+    align-items: center;
+}
+
+.navbar-collapse{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.navbar-nav{
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar .icon{
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    margin: 1rem;
+}
+
+.navbar-collapse a{
+    text-decoration: none;
+    color: white !important;
+    border-radius: 1rem;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+.navbar-collapse a:hover{
+    color: white;
+    text-shadow: 0px 7px 6px black;
+    background-color: rgba(183, 0, 0, 0.8);
+}
+
+.nav-icon{
+    background-color: white !important;
+}
+
+.presentation{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1564878364410-321a432f278b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1975&q=80);
+    background-size: cover;
+    background-position: bottom center;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: end;
+    justify-items: center;
+
+}
+
+.presentation h1{
+    font-family: 'Sriracha', cursive;
+    color: white;
+    font-size: 4rem;
+    margin-top: 6rem;
+}
+
+.container{
+    color: white;
+    padding-bottom: 4rem;
+}
+
+#confirmation{
+    margin: 20rem 0rem;
+}
+
+.footer-end{
+    background-color: black;
+}
+
+.footer-end .my-4 {
+    margin-bottom: 0 !important;
+}
+
+.py-3 a, .py-3 p{
+    color: white !important;
+}
+
+.py-3 li{
+    display: flex;
+    align-items: center;
+    margin: 0px 2rem;
+}
+
+.py-3 svg{
+    color: white;
+}
+
+.py-3 div{
+    width: 8rem;
+    margin: 0px auto;
+}
+
+.py-3 div img{
+    width: 100%;
+    border-radius: 1rem;
+    margin: 1rem 0px 1rem 0px;
+}
+
+
+@media (max-width: 800px) and (orientation: landscape) {
+    /* Estilos que se aplicarán cuando el teléfono esté en posición horizontal */
+    html{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 765px){
+    html{
+        font-size: 16px;
+    }
+
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .presentation div{
+        width: 90vw;
+    }
+
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 14px;
+    }
+
+    .navbar{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+}
