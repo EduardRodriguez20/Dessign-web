@@ -109,6 +109,14 @@ html{
     color: white !important;
 }
 
+.nav-item{
+    transition: all 500ms;
+}
+
+.nav-item:hover{
+    transform: scale(1.1);
+}
+
 .py-3 li{
     display: flex;
     align-items: center;

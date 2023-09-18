@@ -232,6 +232,14 @@ main h2{
     margin-bottom: 0 !important;
 }
 
+.nav-item{
+    transition: all 500ms;
+}
+
+.nav-item:hover{
+    transform: scale(1.1);
+}
+
 .py-3 a, .py-3 p{
     color: white !important;
 }
