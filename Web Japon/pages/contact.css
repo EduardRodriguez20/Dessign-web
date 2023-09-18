@@ -89,6 +89,7 @@ html{
 
 .container{
     color: white;
+    width: 40% !important;
     padding-bottom: 4rem;
 }
 
@@ -144,6 +145,9 @@ html{
 
     .navbar{
         background-color: rgba(0, 0, 0, 0.6);
+    }
+    .container{
+        width: 80% !important;
     }
 
     .presentation div{

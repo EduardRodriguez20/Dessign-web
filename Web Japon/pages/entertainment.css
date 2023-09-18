@@ -2,43 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&display=swap');
 
-.color1 {color: #140f07;}
-.color2 {color: #0e2444;}
-.color3 {color: #345fa8;}
-.color4 {color: #6aa4fd;}
-.color5 {color: #b0f2fa;}
-
-/* .color1 {color: #580b22;}
-.color2 {color: #764431;}
-.color3 {color: #9d8b6f;}
-.color4 {color: #cdd0c3;}
-.color5 {color: #fffeff;} */
-
-.color1 {color: #200d22;}
-.color2 {color: #7c1349;}
-.color3 {color: #089aff;}
-.color4 {color: #f1ebf5;}
-.color5 {color: #fffbf4;}
-
-.color1 {color: #3c2d4f;}
-.color2 {color: #694070;}
-.color3 {color: #ac5b96;}
-.color4 {color: #fe86c3;}
-.color5 {color: #ffbef3;}
-
-.color1 {color: #ff0000 #A62121;}
-.color2 {color: #ffffff;}
-.color3 {color: #000000;}
-.color4 {color: #e60013 #D92323;}
-.color5 {color: #ffcc00;}
-
-.color1 {color: #7f1f2e;}
-.color2 {color: #a22f32;}
-.color3 {color: #da4940;}
-.color4 {color: #ff7d5d;}
-.color5 {color: #ffbb74;}
-
-
 html{
     font-size: 20px;
 }
