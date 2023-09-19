@@ -158,10 +158,6 @@ html{
         width: 80% !important;
     }
 
-    .presentation div{
-        width: 90vw;
-    }
-
 }
 
 @media (max-width: 450px){
