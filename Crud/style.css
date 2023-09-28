@@ -1,28 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
 body{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mooli', sans-serif;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) ,url(https://cdn.pixabay.com/photo/2018/11/03/22/24/fire-3792951_1280.jpg);
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+main{
+    background-color: white;
+    width: 60vw;
+    border-radius: 50px;
+    color: black;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#creation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#creation label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#creation input{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+}
+
+#create {
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Mooli', sans-serif;
+    color: white;
+    background-color: black;
+    margin: 20px;
+    border-radius: 20px;
+}
+
 .titles{
     display: grid;
-    width: 70vw;
+    width: 90%;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     border: 5px solid black;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 #works{
-    width: 70vw;
+    width: 90%;
     border: 5px solid black;
+    margin-bottom: 50px;
+    border-radius: 20px;
 }
 
 .work {
-    background-color: lightblue;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url(https://cdn.pixabay.com/photo/2018/05/11/03/47/stamping-3389455_1280.jpg);
+    background-repeat: no-repeat;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-align: center;
     border-bottom: 5px solid black;
     padding: 10px 0px;
+    color: white;
 }

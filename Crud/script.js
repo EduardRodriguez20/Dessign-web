@@ -16,7 +16,7 @@ function create(){
             date_h2.setAttribute("id", "hour");
             date_h2.textContent = date;
             let work = document.createElement("div");
-            work.classList.add("work")
+            work.classList.add("work");
             let checker = document.createElement("input");
             checker.setAttribute("onclick", "check_checkbox(this)");
             checker.type = "checkbox";
@@ -86,7 +86,7 @@ function check_checkbox(check){
         });
     } else {
         texts.forEach((text) => {
-            text.style = "text-decoration : none; color: black;";
+            text.style = "text-decoration : none; color: white;";
         });
     }
 }
