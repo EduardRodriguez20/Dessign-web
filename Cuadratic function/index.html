@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Funcion Cuadratica</h1>
+    <p>Las funciones polinómicas son aquellas constituidas por un polinomio, un ejemplo de estas es la función cuadrática o de segundo grado, representada con una gráfica de parábola y la siguiente ecuación:</p>
+    <img src="https://www.superprof.es/apuntes/wp-content/uploads/latex/1d436b5ef6080e326fbfe82ad088a21b7f3084d2.png" alt="">
+    <h2>Por lo tanto se necesian 3 datos que cumplan las siguientes restricciones:</h2>
+    <p> - El valor de A debe ser diferente a cero</p>
+    <p> - El cuadrado de B menos 4 veces AC debe ser mayor a cero:</p>
+    <img src="https://www.superprof.es/apuntes/wp-content/uploads/latex/1a2a437916c754d7ce11e1772d4bb653961446ea.png" alt="">
+    
+    <div>
+        <h2>Declara los valores:</h2>
+
+        <label for="">A: </label>
+        <input type="number" id="a">
+        <label for="">B: </label>
+        <input type="number" id="b">
+        <label for="">C: </label>
+        <input type="number" id="c">
+        <button onclick="calculate()">Calcular</button>
+        <div id="results"></div>
+    </div>
+    
+    <div class="styles">
+        <br>
+        <h2>Elige el estilo de la pagina:</h2>
+        <select id="select">
+            <option value= 1 >Medieval</option>
+            <option value= 2 >Clasico</option>
+            <option value= 3 >Futurista</option>
+        </select>
+        <button onclick="change()">Aplicar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

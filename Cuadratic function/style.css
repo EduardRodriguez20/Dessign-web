@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+body{
+    background-color: aquamarine;
+    text-align: center;
+}
+
+img{
+    height: 40px;
+    border-radius: 5px;
+}
+
+p{
+    width: 80vw;
+    margin: 0 auto;
+}
+
+body.style1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.355),rgba(0, 0, 0, 0.355)) ,url(https://cdn.pixabay.com/photo/2015/09/21/13/17/road-949832_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    height: 100vh;
+}
+
+body.style1 button, body.style1 select, body.style1 input{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+body.style2{
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/35/mesh-1430107_640.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    font-size: 24px;
+}
+
+body.style2 button, body.style2 select, body.style2 input{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+body.style3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) ,url(https://cdn.pixabay.com/photo/2020/07/02/04/31/matrix-5361690_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    height: 100vh;
+    font-size: 24px;
+}
+
+body.style3 button, body.style3 select, body.style3 input{
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+}

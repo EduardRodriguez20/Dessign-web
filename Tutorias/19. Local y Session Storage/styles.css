@@ -1,0 +1,17 @@
+/* Estilo Temático 1 (Azul) */
+#estilo1 {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Estilo Temático 2 (Rojo) */
+#estilo2 {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Estilo Temático 3 (Verde) */
+#estilo3 {
+    background-color: #2ecc71;
+    color: #fff;
+}

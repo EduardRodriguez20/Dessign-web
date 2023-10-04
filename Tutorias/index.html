@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+        body{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 24px;
+            font-family: 'Mooli', sans-serif;
+        }
+        
+        h1{
+            font-size: 54px;
+        }
+
+        h2{
+            font-size: 36px;
+        }
+        
+        button{
+            background-color: black;
+            color: white;
+            margin: 20px;
+            border-radius: 10px;
+            transition: all 500ms;
+            font-size: 24px;
+            padding: 5px;
+            font-family: 'Mooli', sans-serif;
+        }
+
+        button:hover{
+            transform: scale(1.1);
+        }
+
+        input{
+            margin: 20px;
+            border-radius: 10px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .container{
+            background-color: white;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular precios y descuentos</h1>
+    <h2>Precios</h2>
+    <p id="counter">Cantidad de productos ingresados: 0</p>
+    <label for="">Ingresa el precio del producto: </label>
+    <input type="number" id="price">
+    <button id="add">Ingresar precio</button>
+
+    <h2>Descuentos</h2>
+    <div style="display: flex; height: 3vh; align-items: center; gap: 10px;">
+        <label for="">Ingresa el descuento de los productos: </label>
+        <input type="number" id="discount">
+        <p>%</p>
+        <button id="calculate">Calcular</button>
+    </div>
+    
+    
+
+    <div class="container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
