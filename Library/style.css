@@ -1,0 +1,60 @@
+
+/* cambios eduard */
+
+#add{
+    display: none;
+}
+
+.add_book{
+    display: flex;
+    justify-content: center;
+}
+
+.info_book{
+    display: grid;
+    background-color: lightgray;
+    grid-template-columns: 1fr 2fr;
+    width: 40%;
+    gap: 10px;
+}
+.info_book p{
+    grid-area: 2/ 1/ 2/ span 2;
+    text-align: center;
+}
+
+.img_book{
+    width: 40%;
+    background-color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_book img{
+    width: 40%;
+    height: 90%;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+/* cambios checho */
+
+.contain_books{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 80px;
+    gap: 40px ;
+}
+
+.book{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: start;
+    background-color: bisque;
+    border: 3px solid black;
+    align-items: center; /* Alinea los elementos en la parte superior */
+}
+.book img{
+    height: 300px;
+    width: 200px;
+}

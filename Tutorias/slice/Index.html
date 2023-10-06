@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .column{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                }
+            .column div{
+                background-color: gray ;
+                margin: 20px;
+                border: 3px solid black;}
+            .column button{border: 2px solid black;}
+            body{text-align: center;
+                background-color: bisque;}
+            .splice {display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-inline-start: 100px;
+                margin-inline-end: 100px;}
+            .splice div{
+                background-color: gray ;
+                margin: 50px;
+                border: 3px solid black;}
+        </style>
+    </head>
+    <body>
+        <h1 >Metodos de un array en un JavaScript</h1>
+        <div class="column">
+            <div c>
+                <h2>Slice</h2>
+                <p>El método slice() devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin ( fin no incluido). El array original no se modificará.</p>
+                <button onclick="slice()">Aprende mas de slice</button><a href=""></a>
+            </div>
+            <div>
+                <h2>Join</h2>
+                <p>El método join() une todos los elementos de una matriz (o un objeto similar a una matriz ) en una cadena y devuelve esta cadena.</p>    
+                <button onclick="join()">Aprende mas de join</button>
+            </div>
+            <div>
+                <h2>Splice</h2>
+                <p>El método splice() cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.</p>
+                <button onclick="Splice()">Aprende mas de Splice</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Splice</h1>
+        <div class="splice">
+            <div>
+                <h2>Syntaxis</h2>
+                <p>array.splice(start[, deleteCount[, item1[, item2[, ...]]]])</p>
+                <h2>parametos</h2>
+                <p>
+                    Start = Índice donde se comenzará a cambiar el array (con 0 como origen). <br>
+                    deleteCount (Opcional) = Un entero indicando el número de elementos a eliminar del array antiguo, si deleteCount se omite entonces todos los elementos desde start hasta el final del array serán eliminados. <br>
+                    item1, item2, ... (Opcional) = Los elementos que se agregarán al array, empezando en el índice 
+                </p>
+            </div>
+            <div>
+                <h2>Ejemplos</h2>
+                <h4>Eliminar 1 elemento desde el índice 2 e insertar "trumpet"</h4>
+                <p>
+                    var myFish = ["angel", "clown", "drum", "sturgeon" ]; <br>
+                    var removed = myFish.splice(2, 1, "trumpet"); <br> <br>
+                    // myFish is ["angel", "clown", "trumpet", "sturgeon"] <br>
+                    // removed is ["drum"] <br>
+                </p>
+            </div>
+        </div>
+        <p>Separa los datos con espacio, no hay necesidad de comillas</p>
+        <div><p>var Mis Peces = [ <input id="ejemploSplice" type="text" placeholder="angel clown sturgeon drum"> ];</p></div>
+        <p>1: desde cuando borrar, 2: cuantos borrar, 3: que agregar</p>
+        <div><p>var Cambios = [ <input id="cambiosSplice" type="text" placeholder="1 2 3"> ];</p></div>
+        <button onclick="splice()">Ver cambios</button>
+        <div id="mensajes"></div>
+        <script src="splice.js"></script>
+    </body>
+    </html>
