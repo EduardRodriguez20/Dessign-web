@@ -8,8 +8,15 @@
 </head>
 <body>
     <h1>Libreria Campuslands</h1>
-    <div>
-        <button>Ordenar</button>
+    <div class="options">
+        <label for="">Ordenar por: </label>
+        <select name="" id="sort" onchange="sorted(this.value)">
+            <option value="1">Titulo</option>
+            <option value="2">Año publicacion</option>
+            <option value="3">Autor</option>
+            <option value="4">Genero</option>
+            <option value="5">Disponible</option>
+        </select>
         <button onclick="show(`#add`,`#books`)">Agregar</button>
     </div>
     <section id="add">
@@ -18,8 +25,7 @@
             <div class="info_book">
                 <label for="">Titulo</label>
                 <input type="text" id="title">
-                <p>Pega el link de la imagen de portada del libro</p>
-                <label for="">Portada</label>
+                <label for="">Link portada</label>
                 <input type="text" id="front" onchange="change_back(this.value)">
                 <label for="">Autor</label>
                 <input type="text" id="author">
@@ -28,9 +34,7 @@
                 <label for="">Año de publicacion</label>
                 <input type="text" id="year">
             </div>
-            <div class="img_book">
-                <img src="" alt="portada" id="img_add">
-            </div>
+            <div class="img_book"></div>
         </div>
         
         <button onclick="add_book()">Agregar</button>
