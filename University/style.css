@@ -1,7 +1,123 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
 
+.registro_curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.datos_curso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 160, 95, 0.408);
+    border: 2px solid rgb(18, 45, 21);
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.datos_curso input{
+    border-radius: 10px;
+}
+
+.encabezado_regis_curso{
+    background-color: rgba(143, 174, 113, 0.668);
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.titulitos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titu_principal{
+    background-color: rgb(85, 122, 85);
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.titu_carrera{
+    background-color: rgb(140, 182, 133);
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.btn_guardar_curso{
+    width: 16%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    background-color: rgb(138, 212, 138);
+}
+
+.btn_guardar_curso:hover{
+    color: azure;
+    background-color: rgb(33, 75, 61);
+    border: 3px solid rgb(12, 45, 12);
+}
 
 
 .info_students{
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.info_students a{
+    cursor: pointer;
+}
+
+.content_students{
+    width: 100%;
+}
+
+.texto_tp{
+    font-weight: bolder;
+    color: rgb(18, 45, 21); 
+}
+
+.encabezado_regis_curso_text{
+    font-weight: bold;
+    color: rgb(57, 70, 61);
+}
+
+.accordion-style{
+    background-color: rgba(131, 188, 131, 0.612) !important;
+    box-shadow: 0 0 5px #7db97da0 !important;
+}
+
+.accordion-style:focus, .accordion-style:active {
+    box-shadow: 0 0 5px #007200a0 !important;
+}
+
+footer{
+    margin-top: 10vh;
+    height: 10vh;
+    background-color: rgb(138, 212, 138);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3{
+    font-weight: bolder;
 }
