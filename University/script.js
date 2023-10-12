@@ -155,18 +155,18 @@ function show_courses(){
             </h2>
             <div id="course${i}" class="accordion-collapse collapse" data-bs-parent="#show_courses">
                 <div class="accordion-body">
-                    <div>
-                        <p>Codigo: ${courses[i].code}</p>
-                        <p>Especialidad: ${courses[i].speciality}</p>
-                        <p>Duracion: ${courses[i].duration}</p>
-                        <p>Creditos: ${courses[i].credits}</p>
+                    <div class="data_course">
+                        <p><b>Codigo:</b> ${courses[i].code}</p>
+                        <p><b>Especialidad:</b> ${courses[i].speciality}</p>
+                        <p><b>Duracion:</b> ${courses[i].duration}</p>
+                        <p><b>Creditos:</b> ${courses[i].credits}</p>
                     </div>
                     <button onclick="show_students(${courses[i].code})">Ver inscritos</button>
                     <button onclick="window.modal${i}.showModal()">Inscribir Estudiante</button>
                     <button onclick="window.modal_course.showModal(), modify_modal_course(${courses[i].code})">Modificar</button>
                     <button onclick="delete_course(${courses[i].code})">Eliminar curso</button>
                     <dialog class="modal_student" id="modal${i}">
-                        <h2>Inscribir Estudiante</h2>
+                        <h2><b>Inscribir Estudiante</b></h2>
                         <label for="">Codigo</label>
                         <input type="number" id="code_student">
                         <label for="">Nombre</label>
@@ -175,7 +175,7 @@ function show_courses(){
                         <button onclick="window.modal${i}.close();">Cerrar</button>
                     </dialog>
                     
-                    <div id="students${courses[i].code}">
+                    <div class="content_info_s" id="students${courses[i].code}">
                         <div class="info_students" id="header${courses[i].code}"></div>
                         <div class="content_students" id="content${courses[i].code}"></div>
                     </div>

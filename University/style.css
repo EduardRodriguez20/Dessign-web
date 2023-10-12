@@ -109,6 +109,31 @@ body{
     box-shadow: 0 0 5px #007200a0 !important;
 }
 
+.data_course{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.data_course p{
+    border: 2px solid black;
+    padding: 10px;
+}
+#modal_course{
+    width: 60vw;
+}
+
+#modal_course h3{
+    width: 100%;
+}
+
+#modal_course input{
+    width: 100%;
+}
+
+.content_info_s{
+    margin-top: 20px;
+}
+
 footer{
     margin-top: 10vh;
     height: 10vh;
