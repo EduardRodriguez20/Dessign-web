@@ -1,0 +1,11 @@
+.contain{
+    background-color: beige;
+    height: 20vh;
+    text-align: center;
+}
+
+.contain_data{
+    display: flex;
+    flex-direction: column;
+}
+
