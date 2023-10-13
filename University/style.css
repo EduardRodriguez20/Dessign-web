@@ -82,6 +82,13 @@ body{
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+.info_student{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
 .info_students a{
     cursor: pointer;
 }
@@ -118,6 +125,52 @@ body{
     border: 2px solid black;
     padding: 10px;
 }
+
+.button_course{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content_info_s{
+    border: 5px solid black;
+    margin: 20px;
+}
+
+.info_students p{
+    border: 2px solid black;
+    height: 100%;
+    padding: 5px;
+}
+
+.info_student div{
+    border: 2px solid black;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.info_student p{
+    border: 2px solid black;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+.info_student div p{
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    border: 0
+}
+
+.info_student button{
+    font-size: 12px;
+    width: 80%;
+}
+
 #modal_course{
     width: 60vw;
 }
@@ -132,6 +185,18 @@ body{
 
 .content_info_s{
     margin-top: 20px;
+}
+
+.modal_student{
+    text-align: center;
+}
+
+.modal_student input{
+    width: 100%;
+}
+
+.modal_student button{
+    margin: 10px;
 }
 
 footer{

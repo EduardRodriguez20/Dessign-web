@@ -161,10 +161,13 @@ function show_courses(){
                         <p><b>Duracion:</b> ${courses[i].duration}</p>
                         <p><b>Creditos:</b> ${courses[i].credits}</p>
                     </div>
-                    <button onclick="show_students(${courses[i].code})">Ver inscritos</button>
-                    <button onclick="window.modal${i}.showModal()">Inscribir Estudiante</button>
-                    <button onclick="window.modal_course.showModal(), modify_modal_course(${courses[i].code})">Modificar</button>
-                    <button onclick="delete_course(${courses[i].code})">Eliminar curso</button>
+                    
+                    <div class="button_course">
+                        <button onclick="show_students(${courses[i].code})">Ver inscritos</button>
+                        <button onclick="window.modal${i}.showModal()">Inscribir Estudiante</button>
+                        <button onclick="window.modal_course.showModal(), modify_modal_course(${courses[i].code})">Modificar</button>
+                        <button onclick="delete_course(${courses[i].code})">Eliminar curso</button>
+                    </div>
                     <dialog class="modal_student" id="modal${i}">
                         <h2><b>Inscribir Estudiante</b></h2>
                         <label for="">Codigo</label>
@@ -227,13 +230,15 @@ function modify_course(code_course){
 function delete_course(code_course){
     let course = ""
     let index = ""
-    for(let i = 0; i < courses.length; i++){
-        if(courses[i].code = code_course){
-            course = courses[i]
-            index = i
+    if (confirm("Deseas eliminar el curso?")){
+        for(let i = 0; i < courses.length; i++){
+            if(courses[i].code = code_course){
+                course = courses[i]
+                index = i
+            }
         }
+        course.delete_c(index)
     }
-    course.delete_c(index)
 }
 
 function add_student(code_career, index){
@@ -275,8 +280,11 @@ function show_students(code_course){
     for (let i = 0; i < students.length; i++){
         if(students[i].course.includes(code_course)){
             contain.innerHTML += `
-            <div id = "${students[i].code}" class = "info_students">
+            <div id = "${students[i].code}" class = "info_student">
+                <div>
                 <button onclick="delete_student(${i}, ${code_course})" class = "button_delete">X</button>
+                </div>    
+            
                 <p>${students[i].code}</p>
                 <p>${students[i].name}</p>
                 <div class="monday">
@@ -380,15 +388,17 @@ function show_horaries(){
         let id_day = "." + horaries[i].day
         let day = contain.querySelector(id_day)
         day.innerHTML = `
-        <p>Inicio: ${horaries[i].hour_init}</p>
-        <p>Fin: ${horaries[i].hour_finish}</p>
+        <p>Inicio: <br>${horaries[i].hour_init}</p>
+        <p>Fin: <br>${horaries[i].hour_finish}</p>
         `
     }
 }
 
 function delete_student(index, code_course){
-    let student = students[index]
-    student.delete_s(index, code_course)
+    if(confirm("Desea eliminar el estudiante?")){
+        let student = students[index]
+        student.delete_s(index, code_course)
+    }
 }
 
 window.addEventListener("load", function (){
