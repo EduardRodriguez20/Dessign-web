@@ -1,11 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 .contain{
-    background-color: beige;
-    height: 20vh;
+    background-color: rgba(255, 255, 255, 0.86);
+    height: 34vh;
     text-align: center;
+    border: 3px solid black;
+    border-radius: 40px;
+
 }
 
-.contain_data{
-    display: flex;
-    flex-direction: column;
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.668),rgba(0, 0, 0, 0.685)),url(https://jsantossuarez.es/wp-content/uploads/2013/05/black-leather-texture-background-hd-1920-x-1080p-20140723204916-53d01fcc3b288.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93.9vh;
+    font-family: 'Poppins', sans-serif;
 }
 
+h1{text-align: center;
+    font-size: 60px;
+    color: white;
+    
+}
+
+h2{font-size: 32px;}
+
+h3{font-size: 28px;}
+
+label{font-size: 22px;}
+
+input{font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}
+
+select{font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+}   
+
+.all{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  
+    gap: 40px;
+    margin: 40px;
+}
