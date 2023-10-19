@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triqui Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Triqui</h1>
+    <button id="start">Empezar Juego</button>
+    <main>
+        <h2>Puntajes</h2>
+        <div id="counters">
+            <h3>Jugador: <span id="playerScore">0</span></h3>
+            <h3>Resultado</h3>
+            <h3>Computadora: <span id="computerScore">0</span></h3>
+        </div>
+        <div class="contain_game" id="gameBoard">
+            <div data-index="0" onclick="selectBox(this)"></div>
+            <div data-index="1" onclick="selectBox(this)"></div>
+            <div data-index="2" onclick="selectBox(this)"></div>
+            <div data-index="3" onclick="selectBox(this)"></div>
+            <div data-index="4" onclick="selectBox(this)"></div>
+            <div data-index="5" onclick="selectBox(this)"></div>
+            <div data-index="6" onclick="selectBox(this)"></div>
+            <div data-index="7" onclick="selectBox(this)"></div>
+            <div data-index="8" onclick="selectBox(this)"></div>
+        </div>
+        <button onclick="resetGame()">Reiniciar</button>
+    </main>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

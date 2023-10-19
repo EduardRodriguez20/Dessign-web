@@ -1,0 +1,56 @@
+body{
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#start{
+    width: 100px;
+}
+
+main{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main h2{
+    text-align: center;
+}
+
+#counters{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+main .contain_game{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+}
+
+.contain_game div{
+    background-color: white;
+    height: 150px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    font-size: 100px;
+}
+
