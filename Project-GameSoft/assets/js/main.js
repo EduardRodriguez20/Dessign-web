@@ -8,6 +8,14 @@ let values = []
 let user_buy = ""
 
 window.addEventListener("load", ()=>{
+    let _client = JSON.parse(localStorage.getItem("Cgs_clients"))
+    let _game = JSON.parse(localStorage.getItem("Cgs_games"))
+    let _cart = JSON.parse(localStorage.getItem("Cgs_cart"))
+    if(!_client || !_game || !_cart){
+        localStorage.setItem("Cgs_clients", JSON.stringify(clients_test))
+        localStorage.setItem("Cgs_games", JSON.stringify(games_test))
+        localStorage.setItem("Cgs_cart", JSON.stringify(cart))
+    }
     load_ls()
     show_games(games)
 })
@@ -33,7 +41,7 @@ function show_games(games_array){
                 <div class="card_text">
                     <h2>${games_array[x].name}</h2>
                     <h3>${games_array[x].theme}</h3>
-                    <h3>Precio: ${games_array[x].price}</h3>
+                    <h3>Precio: $${games_array[x].price}</h3>
                     <h3>Puntos de Fidelizacion: ${games_array[x].points}</h3>
                     <button onclick="modal_pay(false, ${x})" data-bs-toggle="modal" data-bs-target="#modal_pay">Comprar</button>
                     <button onclick="add_cart(${x})" data-bs-toggle="modal" data-bs-target="#modal_confirm">Agregar al Carrito</button>
@@ -47,9 +55,9 @@ function add_cart(index_game){
     let modal = document.querySelector("#modal_confirm .modal-body")
     let game = games[index_game]
     modal.innerHTML=`
-        <h3>Confirmas agregar ${game.name} al carrito?</h3>
-        <h3>Puntos de Fidelizacion: ${game.points}</h3>
-        <h3>Precio: ${game.price}</h3>`
+        <h5>Confirmas agregar ${game.name} al carrito?</h5>
+        <h5>Puntos de Fidelizacion: ${game.points}</h5>
+        <h5>Precio: $${game.price}</h5>`
     let button = document.querySelector("#modal_confirm .modal-footer button")
     button.setAttribute("onclick", `confirm_add_cart(${index_game})`)
 }
@@ -86,11 +94,11 @@ function show_cart(){
             let price_iva = (price*0.16)+price
             modal.innerHTML += `
                 <div class="contain_cart">
-                    <button onclick="delete_of_cart(${x})"><img src="/Project-GameSoft/assets/images/trash.svg"></button>
+                    <button onclick="delete_of_cart(${x})"><img src="assets/images/trash.svg"></button>
                     <p>${cart[x].name}</p>
-                    <p>${price}</p>
-                    <p>${price_iva}</p>
-                    <p>${price * 0.04}</p>
+                    <p>$${price}</p>
+                    <p>$${price_iva}</p>
+                    <p>$${price * 0.04}</p>
                     <p>${cart[x].points}</p>
                 </div>`
             total += cart[x].price
@@ -107,10 +115,10 @@ function show_cart(){
                             </div><div class="contain_cart">
                                 <p></p>
                                 <p></p>
-                                <p>${full_total}</p>
-                                <p>${i_special}</p>
-                                <p>${full_total + i_special}</p>
-                                <p>${total_cgs}</p>
+                                <p>$${full_total}</p>
+                                <p>$${i_special}</p>
+                                <p>$${full_total + i_special}</p>
+                                <p>$${total_cgs}</p>
                             </div>`
     }
     values = [full_total+i_special, total_cgs]
@@ -119,7 +127,6 @@ function show_cart(){
 function delete_of_cart(index){
     if(confirm("Confirma remover el juego del carrito?")){
         cart.splice(index, 1);
-        update_cart()
         show_cart()
         write_ls()
     }
@@ -143,15 +150,15 @@ function modal_pay(if_cart, index){
             price += (price*0.16) + (price*0.04)
             contain_buy.innerHTML += `
                 <div class="contain_pay">
-                    <p>${cart[x].name}</p>
-                    <p>${price}</p>
-                    <p>${cart[x].points}</p>
+                    <p>$${cart[x].name}</p>
+                    <p>$${price}</p>
+                    <p>$${cart[x].points}</p>
                 </div><hr>`
         }
         contain_buy.innerHTML += `<hr><div class="contain_pay">
                                 <p>Total: </p>
-                                <p>${values[0]}</p>
-                                <p>${values[1]}</p>
+                                <p>$${values[0]}</p>
+                                <p>$${values[1]}</p>
                             </div>`
     }else{
         let price = games[index].price
@@ -159,9 +166,9 @@ function modal_pay(if_cart, index){
         contain_buy.innerHTML=""
         contain_buy.innerHTML += `
                 <div class="contain_pay">
-                    <p>${games[index].name}</p>
-                    <p>${total}</p>
-                    <p>${games[index].points}</p>
+                    <p>$${games[index].name}</p>
+                    <p>$${total}</p>
+                    <p>$${games[index].points}</p>
                 </div><hr>`
         values=[games[index].points]
     }
@@ -172,7 +179,7 @@ function select_client(index, type_buy, i_game){
         user_buy = clients[index]
         let contain = document.querySelector("#modal_pay .contain_clients")
         contain.innerHTML = `<h4>Cliente seleccionado: ${user_buy.name}</h4>
-        <button onclick="change_client(${type_buy}, ${i_game})">Cambiar cliente</button>`
+        <button class="b_client" style="width:100%" onclick="change_client(${type_buy}, ${i_game})">Cambiar cliente</button>`
     }
 }
 

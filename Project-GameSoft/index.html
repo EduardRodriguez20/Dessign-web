@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campus GameSoft</title>
-    <link rel="stylesheet" href="/Project-GameSoft/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
@@ -17,17 +17,17 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <img src="/Project-GameSoft/assets/images/icon.png" alt="">
+                        <img src="assets/images/icon.png" alt="">
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project-GameSoft/pages/admin-clients.html">Gestion Clientes</a>
+                        <a class="nav-link" href="pages/admin-clients.html">Gestion Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Project-GameSoft/pages/admin-games.html">Gestion Videojuegos</a>
-                    </li>º
+                        <a class="nav-link" href="pages/admin-games.html">Gestion Videojuegos</a>
+                    </li>
                     <li class="nav-item">
                         <button onclick="show_cart()" data-bs-toggle="modal" data-bs-target="#modal_cart" type="button" class="btn text-bg-light position-relative">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
@@ -61,7 +61,7 @@
                 <div class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Confirmar</button>
+                    <button type="button" class="btn btn-one">Confirmar</button>
                     <button id="cls_confirm_modal" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                     <div id="container_carts"></div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" onclick="modal_pay(true, 0)" data-bs-toggle="modal" data-bs-target="#modal_pay" class="btn btn-primary">Pagar</button>
+                    <button type="button" onclick="modal_pay(true, 0)" data-bs-toggle="modal" data-bs-target="#modal_pay" class="btn btn-one">Pagar</button>
                     <button type="button" id="cls_m_cart" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
@@ -108,18 +108,23 @@
                     <h3>Elige el usuario</h3>
                     <div class="contain_clients"></div>
                     <h3>Total compra:</h3>
+                    <div class="contain_pay">
+                        <p>Nombre</p>
+                        <p>Precio</p>
+                        <p>CGS Coins</p>
+                    </div>
                     <div class="detail_buy"></div>
                     
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Pagar</button>
+                    <button type="button" class="btn btn-one">Pagar</button>
                     <button type="button" id="cls_m_p_cart" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="py-3 my-4">
+    <footer class="py-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
           <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
@@ -130,7 +135,7 @@
         <p class="text-center text-muted">© 2023 Campus GameSoft, Inc</p>
     </footer>
 
-    <script src="/Project-GameSoft/assets/js/main.js" type="module"></script>
+    <script src="assets/js/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

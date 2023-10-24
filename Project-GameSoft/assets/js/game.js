@@ -23,11 +23,13 @@ let games_test = [game1, game2, game3, game4, game5]
 
 window.addEventListener("load", ()=>{
     try {
+        let _game = JSON.parse(localStorage.getItem("Cgs_games"))
+        if(!_game){
+            localStorage.setItem("Cgs_games", JSON.stringify(games_test))
+        }
         load_ls()
         order(0,"id")
         show_games(games)
-        // order(0,"id")
-        // document.getElementById("data_new_client").innerHTML += `${select_country}`
     } catch (e) {
         console.log(e);
     }

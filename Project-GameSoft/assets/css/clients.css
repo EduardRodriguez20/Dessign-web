@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sedgwick+Ave+Display&display=swap');
 
 html{
     font-size: 16px;
@@ -15,7 +16,7 @@ nav{
     transition: all 500ms;
     align-items: center;
     z-index: 2;
-    background-color: black;
+    background-color: #023f1d;
 }
 
 .container-fluid{
@@ -80,8 +81,7 @@ nav p{
 }
 
 main{
-    padding-top: 75px !important;
-    background-color: white;
+    padding-top: 100px !important;
     height: 90vh;
     width: 70%;
     margin: 0 auto;
@@ -91,13 +91,40 @@ main{
     border-radius: 3rem;
 }
 
+.header_main{
+    margin: 1rem;
+    color: white;
+}
+
+.header_main input{
+    border-radius: 10px;
+}
+
+.btn-one{
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    transition: all 500ms;
+    background-color: #023f1d;
+}
+
+.btn-one:hover{
+    color: black;
+    background-color: white;
+}
+
 .section_clients{
+    background-color: white;
     width: 95%;
     border: 2px solid black;
 }
 
 h1, h2{
     font-family: 'Sedgwick Ave Display', cursive;
+    color: white !important;
+    text-align: center;
 }
 
 .table_clients{
@@ -135,6 +162,12 @@ h1, h2{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 2fr 2fr 3fr 2fr 2fr 2fr 1fr 1fr;
+    transition: all 500ms;
+}
+
+.contain_client:hover h5{
+    background-color: #023f1d;
+    color: white;
 }
 
 .contain_client h5{
@@ -144,10 +177,20 @@ h1, h2{
     margin: 0;
 }
 
+.modal-header{
+    background-color: black;
+}
+
 .modal-body{
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
+}
+
+.modal-footer{
+    background-color: black !important;
 }
 
 #data_new_client{
@@ -173,6 +216,7 @@ h1, h2{
 
 .info_cart p{
     background-color: white;
+    color: black;
     height: 90%;
     padding-left: 1rem;
 }
